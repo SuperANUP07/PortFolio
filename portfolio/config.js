@@ -16,7 +16,7 @@ const PORTFOLIO = {
     description: "Cybersecurity Analyst at Cartel Software · VAPT specialist · Full-Stack MERN Developer · Based in Bengaluru, India.",
     keywords:    "Cybersecurity, VAPT, Penetration Testing, Full-Stack, MERN, React, Node.js, Burp Suite, OWASP",
     author:      "Anup Sahu",
-    ogImage:     "assets/images/photo.jpg",   // replace with your actual photo path
+    ogImage:     "assets/images/",   // replace with your actual photo path
     favicon:     "assets/images/favicon.png", // optional favicon
   },
 
@@ -33,7 +33,7 @@ const PORTFOLIO = {
       "Penetration Tester",
       "Full-Stack Developer",
       "MERN Stack Engineer",
-      "Bug Hunter 🐛",
+      // "Bug Hunter 🐛",
       "Open to Opportunities 🚀",
     ],
     description:
@@ -46,7 +46,7 @@ const PORTFOLIO = {
      ABOUT
   ───────────────────────────────────────── */
   about: {
-    photo: "assets/images/photo.jpg", // drop your photo here, update path if needed
+    photo: "assets/images/Anup_Sahu.jpg", // drop your photo here, update path if needed
     paragraphs: [
       `I'm a <strong>Cybersecurity Analyst (VAPT)</strong> currently working at Cartel Software Pvt. Ltd. in Bengaluru, with a background in full-stack web development. My stack spans React.js, Node.js, Express.js, MongoDB — and on the security side, Burp Suite, Metasploit, Nmap, and Wireshark.`,
       `I conduct <strong>vulnerability assessments and penetration testing</strong> on web applications, identify OWASP Top 10 vulnerabilities, and deliver actionable remediation reports. I'm certified in a comprehensive cybersecurity program covering Network Pentesting, Active Directory attacks, SOC operations, and Web App security.`,

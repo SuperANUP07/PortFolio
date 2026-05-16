@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title & meta filled by config.js via main.js -->
+  <title>Loading…</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- Particle Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ───────────── NAV ───────────── -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#hero">AS_07</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="assets/resume.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+  </nav>
+
+  <!-- ───────────── HERO ───────────── -->
+  <section id="hero">
+    <div class="hero-tag"><!-- filled by JS --></div>
+    <h1 class="hero-name glitch" data-text=""><!-- filled by JS --></h1>
+    <p class="hero-role"><span id="typewriter"></span></p>
+    <p class="hero-desc"><!-- filled by JS --></p>
+    <div class="hero-cta"><!-- filled by JS --></div>
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ───────────── ABOUT ───────────── -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">01 // About</div>
+      <div class="about-grid">
+
+        <div class="reveal-left">
+          <div class="about-photo-wrap">
+            <!-- photo injected by JS -->
+            <div class="photo-frame-tl"></div>
+            <div class="photo-frame-br"></div>
+            <div class="about-glow"></div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <div class="section-title">Who Am <span class="accent">I</span></div>
+          <div class="about-paragraphs"><!-- filled by JS --></div>
+          <div class="stats-row"><!-- filled by JS --></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── SKILLS ───────────── -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">02 // Skills</div>
+      <div class="section-title">Tech <span class="accent">Stack</span></div>
+      <div class="skills-grid"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ───────────── PROJECTS ───────────── -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">03 // Projects</div>
+      <div class="section-title">What I've <span class="accent">Built</span></div>
+      <div class="projects-gallery"><!-- filled by JS --></div>
+      <!-- Live Hosted Projects Gallery -->
+      <div class="hosted-projects-section">
+        <div class="hosted-title">🌐 Live Hosted Projects</div>
+        <div class="hosted-gallery"><!-- filled by JS --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── SECURITY STATS ───────────── -->
+  <section id="security">
+    <div class="section-inner">
+      <div class="section-label">04 // Security</div>
+      <div class="section-title">Cybersecurity <span class="accent">Stats</span></div>
+      <div class="security-grid">
+
+        <!-- PortSwigger -->
+        <div class="reveal-left">
+          <div class="security-card">
+            <div class="security-title">PortSwigger Web Academy</div>
+            <div class="sec-stat">
+              <span class="sec-stat-label">Current Level</span>
+              <span class="sec-stat-val" id="ps-level"></span>
+            </div>
+            <div class="sec-stat">
+              <span class="sec-stat-label">Apprentice Labs</span>
+              <span class="sec-stat-val" id="ps-apprentice"></span>
+            </div>
+            <div class="sec-stat">
+              <span class="sec-stat-label">Practitioner Labs</span>
+              <span class="sec-stat-val" id="ps-practitioner"></span>
+            </div>
+            <div class="sec-stat">
+              <span class="sec-stat-label">Expert Labs</span>
+              <span class="sec-stat-val" id="ps-expert"></span>
+            </div>
+            <div class="sec-stat">
+              <span class="sec-stat-label">Vulnerability Coverage</span>
+              <span class="sec-stat-val" id="ps-coverage"></span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="ps-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LeetCode -->
+        <div class="reveal-right">
+          <div class="security-card" style="border-top-color:var(--neon-blue)">
+            <div class="security-title" style="color:var(--neon-blue)">LeetCode DSA Stats</div>
+            <div class="lc-trio">
+              <div class="lc-card">
+                <div class="lc-num easy" id="lc-easy"></div>
+                <div class="lc-label"   id="lc-easy-t"></div>
+              </div>
+              <div class="lc-card">
+                <div class="lc-num med" id="lc-med"></div>
+                <div class="lc-label"  id="lc-med-t"></div>
+              </div>
+              <div class="lc-card">
+                <div class="lc-num hard" id="lc-hard"></div>
+                <div class="lc-label"   id="lc-hard-t"></div>
+              </div>
+            </div>
+            <div class="lc-totals">
+              <div class="lc-total-item">
+                <div class="lc-total-num" style="color:var(--neon-blue)"   id="lc-total"></div>
+                <div class="lc-total-label">TOTAL SOLVED</div>
+              </div>
+              <div class="lc-total-item">
+                <div class="lc-total-num" style="color:var(--neon-green)"  id="lc-days"></div>
+                <div class="lc-total-label">ACTIVE DAYS</div>
+              </div>
+              <div class="lc-total-item">
+                <div class="lc-total-num" style="color:var(--neon-purple)" id="lc-streak"></div>
+                <div class="lc-total-label">MAX STREAK</div>
+              </div>
+            </div>
+            <div class="lc-meta">
+              Rank: <a id="lc-link" target="_blank" style="color:var(--neon-blue);text-decoration:none" id="lc-rank-link"><span id="lc-rank"></span></a>
+              &nbsp;|&nbsp; Primary: <span style="color:var(--neon-green)" id="lc-lang"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── EXPERIENCE ───────────── -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-label">05 // Experience</div>
+      <div class="section-title">Work <span class="accent">History</span></div>
+      <div class="timeline reveal"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ───────────── EDUCATION & CERTS ───────────── -->
+  <section id="certifications">
+    <div class="section-inner">
+      <div class="section-label">06 // Education & Certs</div>
+      <div class="section-title">Learning <span class="accent">Path</span></div>
+      <div class="edu-blocks"><!-- filled by JS --></div>
+      <div class="cert-grid"><!-- filled by JS --></div>
+    </div>
+  </section>
+
+  <!-- ───────────── CONTACT ───────────── -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-inner">
+        <div class="section-label" style="justify-content:center">07 // Contact</div>
+        <div class="section-title">Let's <span class="accent">Connect</span></div>
+        <p class="contact-intro reveal">
+          Open to cybersecurity roles, full-stack development opportunities, freelance projects, or just a conversation about VAPT and code. Drop me a line.
+        </p>
+        
+        <!-- Formspree Contact Form -->
+        <form class="contact-form reveal" id="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Your message..." rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary form-submit">Send Message →</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+        
+        <!-- Direct Contact Links -->
+        <div class="contact-links reveal"><!-- filled by JS --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer>
+    <p>Built by <span class="footer-name"></span> · <span class="footer-year"></span> &nbsp;·&nbsp; <span class="footer-tag"></span></p>
+    <p style="margin-top:.4rem;font-size:.62rem;opacity:.4"><span class="footer-copyright"></span></p>
+  </footer>
+
+  <!-- Data (edit this file for all content) -->
+  <script src="config.js"></script>
+  <!-- App logic (do not edit for content changes) -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

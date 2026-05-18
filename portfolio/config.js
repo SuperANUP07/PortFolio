@@ -46,7 +46,7 @@ const PORTFOLIO = {
      ABOUT
   ───────────────────────────────────────── */
   about: {
-    photo: "assets/images/Anup_Sahu.jpeg",
+    photo: "assets/images/ANUP_SAHU.jpeg",
     paragraphs: [
       `I'm a <strong>Cybersecurity Analyst (VAPT)</strong> currently working at Cartel Software Pvt. Ltd. in Bengaluru, with a background in full-stack web development. My stack spans React.js, Node.js, Express.js, MongoDB — and on the security side, Burp Suite, Metasploit, Nmap, and Wireshark.`,
       `I conduct <strong>vulnerability assessments and penetration testing</strong> on web applications, identify OWASP Top 10 vulnerabilities, and deliver actionable remediation reports. I'm certified in a comprehensive cybersecurity program covering Network Pentesting, Active Directory attacks, SOC operations, and Web App security.`,
